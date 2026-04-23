@@ -1,20 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mashka Box</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAShKA BOX</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
+<!-- NAVBAR -->
+<header>
+    <nav>
+        <a href="#inicio" class="active">Inicio</a>
+        <a href="#horarios">Horarios</a>
+        <a href="#planes">Suscripciones</a>
+        <a href="#contactos">Contactos</a>
+    </nav>
+</header>
 
-        <a href="#inicio">Inicio</a>
-        <a href="#Servicios">Inicio</a>
-        <a href="#Contacto">Inicio</a>
-        <a href="#inicio">Inicio</a>
-
-        <h1>MASHKA BOX</h1>
+<!-- HERO -->
+<section id="inicio" class="hero">
+    <div class="logo-img">
+        <!-- aquí puedes poner tu logo -->
+        <h1>MASHKA <span>BOX</span></h1>
         <p>TRAINING CLUB</p>
+<<<<<<< HEAD
         
         <h2>SOLO GANAS DE EMPEZAR</h2>
     </header>
@@ -26,46 +36,137 @@
 
         
         </section>
+=======
+    </div>
 
-        <section id="ubicacion">
-            <img src="ruta_a_icono_ubicacion.png" alt="Icono de ubicación">
-            <h3>Av. Unidad Nacional y Manuelita Saenz (junto a Bundavah)</h3>
-        </section>
+    <h3>NO NECESITAS EXPERIENCIA<br>SOLO GANAS DE EMPEZAR</h3>
+>>>>>>> 8c4175f369bddda3f5224dd07dba69c94dc75ebb
 
-        <section id="horarios">
-            <h3>HORARIOS DE ATENCION</h3>
-            <p><strong>Lunes a Viernes</strong></p>
-            <p>5:00, 6:00, 7:00, 8:00 AM</p>
-            <p>4:00, 5:00, 6:00, 7:00, 8:00 PM</p>
-            <p><strong>Sábado</strong></p>
-            <p>9:00 AM</p>
-        </section>
+    <img src="gym.jpg" alt="Gym" class="hero-img">
+</section>
 
-        <section id="contactos">
-            <h3>CONTACTOS</h3>
-            
-            <p>
-               
-                <img src="images/icons/whatsapp.ico" alt="Icono de WhatsApp"  width="40">
+<div class="banner">
+    VEN POR TU PRIMERA CLASE GRATIS!
+</div>
+
+<section class="location">
+    📍 Av. Unidad Nacional y Manuelita Saenz (junto a Bundavah)
+</section>
+
+<!-- HORARIOS -->
+<section id="horarios" class="section-yellow">
+    <div class="section-title">HORARIOS DE ATENCIÓN</div>
+
+    <div class="card">
+        <p class="yellow-text"><strong>Lunes a Viernes</strong></p>
+        <p class="blue-text">En la mañana</p>
+        <p>5:00, 6:00, 7:00, 8:00 AM</p>
+
+        <p class="blue-text">En la tarde/noche</p>
+        <p>4:00, 5:00, 6:00, 7:00, 8:00 PM</p>
+
+        <br>
+
+        <p class="yellow-text"><strong>Sábado</strong></p>
+        <p>9:00 AM</p>
+    </div>
+</section>
+
+<!-- VIDEO -->
+<section class="video-section">
+
+
+    <div class="video-box">
+        <iframe width="100%" height="250"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="Video"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+<!-- PLANES -->
+<section id="planes">
+    <div class="blue-banner">ELIGE TU PLAN!</div>
+
+    <div class="plans">
+
+        <div class="plan">
+            <h2>PLAN GRUPAL</h2>
+            <h1>$30</h1>
+            <p>Desde tres personas</p>
+        </div>
+
+        <div class="plan">
+            <h2>PLAN ESTUDIANTE</h2>
+            <h1>$30</h1>
+            <p>Con carnet vigente</p>
+        </div>
+
+        <div class="plan">
+            <h2>PLAN MENSUAL</h2>
+            <h1>$35</h1>
+            <p>Intenta un mes</p>
+        </div>
+
+        <div class="plan">
+            <h2>PLAN TRIMESTRAL</h2>
+            <h1>$95</h1>
+            <p>Comprométete 90 días</p>
+        </div>
+
+        <div class="plan large">
+            <h2>PLAN SEMESTRAL</h2>
+            <h1>$180</h1>
+            <p>Convierte tu vida</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- FORMULARIO -->
+<section class="form-section">
+    <div class="section-title">INSCRÍBETE</div>
+
+    <form class="formulario">
+        <input type="text" placeholder="Nombre completo *" required>
+        <input type="email" placeholder="Correo electrónico *" required>
+        <input type="tel" placeholder="Contacto de Whatsapp">
+
+        <button type="submit">ENVIAR</button>
+    </form>
+</section>
+
+<!-- CONTACTOS -->
+<footer id="contactos" class="footer">
+
+    <div class="section-title">CONTACTOS</div>
+
+    <div class="contact">
+        <div class="contact-info">
+    <p>
+                <img src="images/icons/whatsapp.png" width="30">
                 0983421877
             </p>
-            
-            <p>
-                <a href="https://www.instagram.com/?hl=es" target="_blank">
-                <img src="images/icons/instagram.ico" alt="Icono de Instagram"  width="40">
-                <!-- @mashkabox-->
-                 </a>
-            </p>
-            
-            <p>
-                <a href="https://secure.facebook.com/" target="_blank"> 
-                <img src="images/icons/facebook.ico" alt="Icono de Facebook" width="40">
-            </a>
 
-               <!-- @mashkabox-->
-            
-            <img src="" alt="Código QR de contacto">
-        </section>
-    </main>
+            <p>
+                <img src="images/icons/instagram.png" width="30">
+                @mashkabox
+            </p>
+
+            <p>
+                <img src="images/icons/facebook.png" width="30">
+                @mashkabox
+            </p>
+
+        </div>
+
+        <div class="qr">
+            <img src="qr.png" alt="QR">
+        </div>
+    </div>
+
+</footer>
 </body>
-</html> 
+</html>

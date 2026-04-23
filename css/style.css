@@ -1,0 +1,45 @@
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#000;
+  
+}
+
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#000;
+    padding:10px 0;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:5px;
+}
+
+nav a{
+    text-decoration:none;
+    background:#0066ff;
+    color:white;
+ 
+}
+
+nav a.active{
+
+}
+
+
+.hero{
+ 
+}
+
+.hero h1{
+  
+}
