@@ -3,55 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAShKA BOX</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Mashka Box</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
 <!-- NAVBAR -->
 <header>
-    <nav>
+  <nav>
+    <img src="images/logo.png" alt="Logo" class="logo">
+
+    <div class="nav-links">
         <a href="#inicio" class="active">Inicio</a>
+        <a href="#beneficios">Beneficios</a>
         <a href="#horarios">Horarios</a>
         <a href="#planes">Suscripciones</a>
         <a href="#contactos">Contactos</a>
-    </nav>
+    </div>
+</nav>
 </header>
 
 <!-- HERO -->
 <section id="inicio" class="hero">
-    <div class="logo-img">
-        <!-- aquí puedes poner tu logo -->
-        <h1>MASHKA <span>BOX</span></h1>
-        <p>TRAINING CLUB</p>
-
-        
-        <h2>SOLO GANAS DE EMPEZAR</h2>
-    </header>
-
-    <main>
-        
-        <section id="promocion">
-            <h2>VEN POR TU PRIMERA CLASE GRATIS!</h2>
-
-        
-        </section>
-
-    </div>
-
-    <h3>NO NECESITAS EXPERIENCIA<br>SOLO GANAS DE EMPEZAR</h3>
-
-
-    <img src="gym.jpg" alt="Gym" class="hero-img">
+    
+    <img src="images/banner.png" alt="Gym" class="hero-img">
 </section>
 
 <div class="banner">
-    VEN POR TU PRIMERA CLASE GRATIS!
+   🥊 VEN POR TU PRIMERA CLASE GRATIS! 🔥
 </div>
 
-<section class="location">
-    📍 Av. Unidad Nacional y Manuelita Saenz (junto a Bundavah)
+<section class="carousel">
+
+   <div class="carousel-track">
+    <img src="images/img1.jpeg">
+    <img src="images/img2.jpeg">
+    <img src="images/img3.jpeg">
+    <img src="images/img4.jpeg">
+
+    <!-- duplicadas -->
+    <img src="images/img1.jpeg">
+    <img src="images/img2.jpeg">
+    <img src="images/img3.jpeg">
+    <img src="images/img4.jpeg">
+</div>
+
 </section>
+
+
+<!-- BIENVENIDA -->
+<section class="about-section">
+    <h2>BIENVENIDO A MASHKA BOX</h2>
+
+    <p>
+        En Mashka Box Training Club te ayudamos a alcanzar tus objetivos físicos y mentales con entrenamientos funcionales y acondicionamiento físico.
+    </p>
+
+    <p>
+        Contamos con entrenadores capacitados, horarios flexibles y un ambiente motivador para que cada día superes tus límites.
+    </p>
+</section>
+
+<!-- BENEFICIOS -->
+<section id="beneficios" class="benefits-section">
+    <h2>¿POR QUÉ ELEGIRNOS?</h2>
+
+    <ul class="benefits-list">
+        <li>✔ Ejercicios adaptados a tu nivel</li>
+        <li>✔ Apto para todas las edades</li>
+        <li>✔ Te acompañamos paso a paso</li>
+        <li>✔ La mejor comunidad de Latacunga</li>
+        <li>✔ Cross-fit y entrenamiento funcional</li>
+    </ul>
+</section>
+
 
 <!-- HORARIOS -->
 <section id="horarios" class="section-yellow">
@@ -75,15 +100,37 @@
 <!-- VIDEO -->
 <section class="video-section">
 
+    <div class="video-overlay"></div>
 
     <div class="video-box">
-        <iframe width="100%" height="250"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="Video"
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
+        <video class="video-gym" autoplay muted loop playsinline>
+            <source src="videos/gym-training.mp4" type="video/mp4">
+        </video>
     </div>
+
+</section>
+
+
+
+<div class="map-title-container">
+    <div class="map-title">
+        VISÍTANOS Y ENTRENA CON NOSOTROS
+    </div>
+</div>
+
+<section class="map-section">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.2753352871086!2d-78.61389142689076!3d-0.9452788353446213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d461636565889b%3A0x390a2c8fd01dcfa2!2sMashka%20Box%20Training%20Club!5e0!3m2!1ses!2sec!4v1777386847838!5m2!1ses!2sec" 
+width="800" 
+height="600" 
+style="border:0;" 
+allowfullscreen="" 
+loading="lazy"
+referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+</section>
+
+<section class="location">
+    📍 Av. Unidad Nacional y Manuelita Saenz (junto a Bundavah)
 </section>
 
 <!-- PLANES -->
@@ -108,6 +155,7 @@
             <h2>PLAN MENSUAL</h2>
             <h1>$35</h1>
             <p>Intenta un mes</p>
+
         </div>
 
         <div class="plan">
@@ -126,46 +174,106 @@
 </section>
 
 
+<!-- TABLA COMPARATIVA -->
+<section class="table-section">
+    <div class="section-title">COMPARA NUESTROS PLANES</div>
+
+    <table>
+        <tr>
+            <th>Plan</th>
+            <th>Precio</th>
+            <th>Beneficio</th>
+        </tr>
+
+        <tr>
+            <td>Grupal</td>
+            <td>$30</td>
+            <td>Desde 3 personas</td>
+        </tr>
+
+        <tr>
+            <td>Mensual</td>
+            <td>$35</td>
+            <td>Acceso completo</td>
+        </tr>
+
+        <tr>
+            <td>Trimestral</td>
+            <td>$95</td>
+            <td>Ahorro especial</td>
+        </tr>
+
+        <tr>
+            <td>Semestral</td>
+            <td>$180</td>
+            <td>Máximo ahorro</td>
+        </tr>
+    </table>
+</section>
+
 <!-- FORMULARIO -->
 <section class="form-section">
-    <div class="section-title">INSCRÍBETE</div>
+    <div class="section-title">INSCRÍBETE YA</div>
 
-    <form class="formulario">
-        <input type="text" placeholder="Nombre completo *" required>
-        <input type="email" placeholder="Correo electrónico *" required>
-        <input type="tel" placeholder="Contacto de Whatsapp">
+<form class="formulario" action="guardar.php" method="POST">
 
-        <button type="submit">ENVIAR</button>
-    </form>
+    <input type="text" name="nombre" placeholder="Nombre completo" required>
+
+    <input type="email" name="email" placeholder="Correo electrónico" required>
+
+    <input type="tel" name="whatsapp" placeholder="Contacto de Whatsapp">
+
+    <button type="submit">ENVIAR</button>
+
+</form>
 </section>
 
 <!-- CONTACTOS -->
 <footer id="contactos" class="footer">
+<div class="contact-container">
 
-    <div class="section-title">CONTACTOS</div>
+    <!-- IZQUIERDA -->
+    <div class="contact-info">
+        <h2>CONTÁCTANOS</h2>
 
-    <div class="contact">
-        <div class="contact-info">
-    <p>
+        <p>
+            <a href="https://wa.me/593983421877" target="_blank">
                 <img src="images/icons/whatsapp.png" width="30">
+            </a>
+
+            <a href="https://wa.me/593983421877" target="_blank">
                 0983421877
-            </p>
+            </a>
+        </p>
 
-            <p>
-                <img src="images/icons/instagram.png" width="30">
-                @mashkabox
-            </p>
 
-            <p>
+                <p>
+            <a href="https://facebook.com/mashkabox" target="_blank">
                 <img src="images/icons/facebook.png" width="30">
+            </a>
+
+            <a href="https://facebook.com/mashkabox" target="_blank">
                 @mashkabox
-            </p>
+            </a>
+        </p>
+        
+        <p>
+            <a href="https://instagram.com/mashkabox" target="_blank">
+                <img src="images/icons/instagram.png" width="30">
+            </a>
 
-        </div>
+            <a href="https://instagram.com/mashkabox" target="_blank">
+                @mashkabox
+            </a>
+        </p>
 
-        <div class="qr">
-            <img src="qr.png" alt="QR">
-        </div>
+
+    </div>
+
+</div>
+
+    <div class="copyright">
+        © 2026 Mashka Box - Todos los derechos reservados
     </div>
 
 </footer>
