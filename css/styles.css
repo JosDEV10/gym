@@ -13,6 +13,10 @@ html, body{
     overflow-x:hidden;
 }
 
+#menu-check{
+    display:none;
+}
+
 .menu-toggle{
     display:none; /* 🔥 oculto en PC */
     font-size:30px;
@@ -424,6 +428,18 @@ tr:hover{
     margin-left:20px;
 }
 
+
+.logo-link{
+    background:none !important;
+    padding:0 !important;
+}
+
+.logo-link:hover{
+    background:none !important;
+    transform:none !important;
+    text-shadow:none !important;
+}
+
 /* FORM */
 .form-section{
     background:#ffc107;
@@ -616,14 +632,26 @@ nav{
         border-bottom:1px solid #333;
     }
 
-    .nav-links.active{
-        display:flex;
-    }
+#menu-check:checked ~ .nav-links{
+    display:flex;
+}
 
 
     .logo{
         margin:0;
     }
+
+.logo-link{
+    background:none !important;
+    padding:0 !important;
+}
+
+
+.logo-link:hover{
+    background:none !important;
+    transform:none !important;
+    text-shadow:none !important;
+}
 
     /* ===== HERO ===== */
 
