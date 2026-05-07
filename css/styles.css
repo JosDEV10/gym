@@ -9,6 +9,17 @@ body{
     color:#fff;
 }
 
+html, body{
+    overflow-x:hidden;
+}
+
+.menu-toggle{
+    display:none; /* 🔥 oculto en PC */
+    font-size:30px;
+    color:white;
+    cursor:pointer;
+}
+
 /* NAV */
 header{
     position:sticky;
@@ -60,13 +71,10 @@ nav a.active{
 }
 
 /* HERO */
-
 .hero{
     text-align:center;
     padding:0;
     margin:0;
-
-
     background:
         linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
         url("../images/banner.png") center/cover no-repeat;
@@ -80,8 +88,8 @@ nav a.active{
     display:block;
     margin:0 auto;
 }
-/* BANNER */
 
+/* BANNER */
 .banner{
     background:linear-gradient(90deg, #ffc107, #ffdb4d, #ffc107);
     color:#000;
@@ -95,10 +103,6 @@ nav a.active{
     text-shadow:1px 1px 2px rgba(255,255,255,0.5);
     box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
-
-
-/* ANIMACIÓN BANNER */
-
 
 .location{
     background:#111;
@@ -245,6 +249,7 @@ nav a.active{
     text-align:center;
     padding-top:25px;
 }
+
 /* CARD */
 .card{
     background:linear-gradient(145deg,#111,#1a1a1a);
@@ -282,8 +287,6 @@ nav a.active{
     box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
 
-
-
 /* VIDEO */
 .video-section{
     position:relative;
@@ -308,8 +311,6 @@ nav a.active{
 }
 
 /* PLANES */
-
-
 #planes{
     background:#ffc107;
     padding-bottom:40px;
@@ -408,17 +409,13 @@ td{
     font-size:18px;
 }
 
-
-
 tr:last-child td{
     border-bottom:none;
 }
 
-
 tr:hover{
     background:#222;
 }
-
 
 /* LOGO */
 .logo{
@@ -561,28 +558,224 @@ tr:hover{
 }
 
 
-.qr img{
-    width:120px;
-    background:white;
-    padding:10px;
-    border-radius:10px;
+/*RESPONSIVO*/
+@media(max-width:768px){
+
+        header{
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        z-index:1000;
+    }
+
+        body{
+        padding-top:80px;
+    }
+
+    /* ===== NAVBAR ===== */
+nav{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+
+        .menu-toggle{
+        display:block;
+    }
+
+.nav-links{
+ position:absolute;
+
+    top:70px;
+
+    left:50%;
+    transform:translateX(-50%);
+
+    width:90%;
+    max-width:350px;
+
+    background:#111;
+
+    border-radius:15px;
+
+    flex-direction:column;
+    align-items:center;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.5);
+
+    display:none;
+    }
+
+    .nav-links a{
+        width:100%;
+        text-align:center;
+        padding:15px;
+        border-bottom:1px solid #333;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+
+    .logo{
+        margin:0;
+    }
+
+    /* ===== HERO ===== */
+
+    .hero{
+    overflow:hidden;
 }
 
-@media(max-width:768px){
-    .hero h1{
-        font-size:40px;
+   .hero-img{
+    width:100%;
+    height:auto;
+}
+    /* ===== BANNER ===== */
+    .banner{
+        font-size:18px;
+        padding:15px;
+    }
+
+    /* ===== ABOUT ===== */
+    .about-section h2{
+        font-size:28px;
+    }
+
+    .about-section p{
+        font-size:16px;
+    }
+
+    /* ===== BENEFICIOS ===== */
+    .benefits-section h2{
+        font-size:26px;
+    }
+
+    .benefits-list li{
+        font-size:16px;
+    }
+
+    /* ===== CARRUSEL ===== */
+  .carousel-track{
+    display:flex;
+    gap:20px;
+    width:max-content;
+}
+
+.carousel-track img{
+    max-width:100%;
+}
+
+
+    .plans{
+        flex-direction:column;
+        align-items:center;
     }
 
     .plan{
-        width:100%;
+        width:90%;
+        max-width:320px;
+    }
+
+    .plan h1{
+        font-size:40px;
+    }
+
+    .plan h2{
+        font-size:20px;
+    }
+
+    .plan p{
+        font-size:16px;
     }
 
     .large{
-        width:100%;
+        width:90%;
     }
 
-    .contact{
+
+    .plan{
+    border:2px solid #ffc107;
+}
+
+
+
+    /* ===== HORARIOS / CARD ===== */
+    .card{
+        padding:20px;
+    }
+
+    .card p{
+        font-size:16px;
+    }
+
+    /* ===== VIDEO ===== */
+
+
+    .video-box{
+    display:flex;
+    justify-content:center;
+}
+
+    .video-gym{
+    width:70%;     
+    max-width:300px; 
+}
+
+    /* ===== MAPA ===== */
+    .map-title{
+        font-size:22px;
+    }
+
+    .location{
+        font-size:18px;
+    }
+
+    /* ===== TABLA ===== */
+    table{
+        font-size:14px;
+    }
+
+    th, td{
+        padding:10px;
+    }
+
+    /* ===== FORMULARIO ===== */
+    .formulario{
+        padding:20px;
+    }
+
+    .formulario button{
+        width:100%;
+        align-self:center;
+    }
+
+    .form-section .section-title{
+        font-size:24px;
+
+    letter-spacing:1px;
+
+    -webkit-text-stroke: 0;
+
+    text-shadow:
+        1px 1px 2px rgba(0,0,0,0.4);
+    }
+
+
+    
+
+    /* ===== FOOTER ===== */
+    .contact-container{
         flex-direction:column;
+        padding-left:0;
+    }
+
+    .contact-info{
+        margin-left:0;
         text-align:center;
     }
 }
